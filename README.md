@@ -10,7 +10,7 @@ Gaussian kernel smoothing applied in spatial dimension for each timestamp. Histo
 
 ### Bandpass
 
-Butterworth bandpass filter applied as an alternative. (Frequencies: ($10^{-12}$,59.9) Hz / Order: 4) Frequency response: 
+Butterworth bandpass filter applied as an alternative. (Frequencies: $( 10^{-12} ,59.9)$ Hz / Order: 4) Frequency response: 
 
 ![image](https://user-images.githubusercontent.com/29153183/211879641-1c8d71b9-de5b-4377-9df8-596dbbb56d11.png)
 
@@ -24,10 +24,36 @@ Histogram of residuals:
 ### STLSQ
 
 Parameters:
-*  hello
+*  threshold=8
+*  alpha=1e-5
+
+Results: $u_t = 0.039 u_x$
+
+### SR3, $L_0$ Norm
+
+Parameters:
+*  threshold=7
+*  max_iter=10000
+*  tol=1e-15
+*  nu=1e2
+
+Results: $u_t = 0.039 u_x$
+
+### SR3, $L_1$ Norm
+Parameters:
+*  threshold=7
+*  max_iter=10000
+*  tol=1e-15
+*  nu=1e2
+
+Results: $u_t = 0.046 u_x + 0.029 u_{xxx}$
 
 ### Ensemble STLSQ
+* threshold= $5 \times 10^{-3}$
+* alpha=1e-5
+* max_iter=50
 
+Results: $u_t = 0.036 u_x + 0.006 u_{xx} + 0.009 u_{xxx} -0.009 u^2 u_x $
 
 ## Time Augmentation (longer time periods)
 
