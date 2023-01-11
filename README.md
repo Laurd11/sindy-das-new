@@ -4,7 +4,11 @@
 
 ### Gaussian Kernel Smoothing
 
+Gaussian kernel smoothing applied in spatial dimension for each timestamp.
+
 ### Bandpass
+
+Butterworth lowpass filter applied as an alternative. (Frequency: / Order: )
 
 ## SINDy Application
 
