@@ -29,6 +29,12 @@ Parameters:
 
 Results: $u_t = 0.039 u_x$
 
+Parameters:
+* threshold= $0.5 $
+* alpha=1e-5
+
+Results: $u_t = 0.048 u_{x} + 0.029 u_{xxx} -0.002 u u_{xxx}$
+
 ### SR3, $L_0$ Norm
 
 Parameters:
