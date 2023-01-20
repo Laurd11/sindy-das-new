@@ -29,13 +29,15 @@ Parameters:
 
 Results: $u_t = 0.039 u_x$
 
+**Travelling function: $u(x,t) = f(x+ct)$**
+
 Parameters:
 * threshold= $0.5 $
 * alpha=1e-5
 
 Results: $u_t = 0.048 u_{x} + 0.029 u_{xxx} -0.002 u u_{xxx}$
 
-### SR3, $L_0$ Norm
+<!-- ### SR3, $L_0$ Norm
 
 Parameters:
 *  threshold=7
@@ -43,7 +45,9 @@ Parameters:
 *  tol=1e-15
 *  nu=1e2
 
-Results: $u_t = 0.039 u_x$
+Results: $u_t = 0.039 u_x$ -->
+
+
 
 ### SR3, $L_1$ Norm
 Parameters:
@@ -53,6 +57,10 @@ Parameters:
 *  nu=1e2
 
 Results: $u_t = 0.046 u_x + 0.029 u_{xxx}$
+
+**Assuming Travelling function: $u(x,t) = f(x+ct)$**
+
+**Then: $f' = - M f''' \to u(x,t) = a \cos(x+ct) + b \sin(x+ct)$**
 
 ### Ensemble STLSQ
 * threshold= $5 \times 10^{-3}$
