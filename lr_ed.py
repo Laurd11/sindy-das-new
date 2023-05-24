@@ -109,7 +109,7 @@ def localreg(x, y, weight_matr,ind_list,x0=None, degree=0):
             # Filter out the datapoints with zero weights.
             # Speeds up regressions with kernels of local support.
         inds = ind_list[i]
-
+        
         y0[i] = polyfit(x[inds], y[inds], xi[None,:],
                             weights[inds], degree=degree)
 
